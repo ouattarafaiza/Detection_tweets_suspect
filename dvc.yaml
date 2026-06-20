@@ -1,0 +1,8 @@
+stages:
+  preprocess:
+    cmd: python src_pretraitement.py
+    deps:
+    - src_pretraitement.py
+    - tweets_suspect.csv
+    outs:
+    - tweets_suspect_clean.csv
