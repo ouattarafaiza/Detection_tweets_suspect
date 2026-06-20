@@ -48,3 +48,31 @@ stages:
       hash: md5
       md5: f7a5a4a8a02c4202152f41de956bc3f7
       size: 1067
+  train_val:
+    cmd: python src_entrainement_validation.py
+    deps:
+    - path: matrix_tfidf.pkl
+      hash: md5
+      md5: e57f4d915db9596a483d7304daee9aa9
+      size: 5451746
+    - path: modeles_construits.pkl
+      hash: md5
+      md5: f7a5a4a8a02c4202152f41de956bc3f7
+      size: 1067
+    - path: src_entrainement_validation.py
+      hash: md5
+      md5: 9e153c5da6c695b5a52d451a5ec7660a
+      size: 2387
+    outs:
+    - path: donnees_test.pkl
+      hash: md5
+      md5: 051390afd02771916e1c1ff94c084717
+      size: 1278882
+    - path: modeles_entraines.pkl
+      hash: md5
+      md5: 5f00b0bc57f11933d92104bd7b746b99
+      size: 43416458
+    - path: performances_validation.csv
+      hash: md5
+      md5: 4e9bd2f0d6237e976ba664a296f0e2c5
+      size: 312
