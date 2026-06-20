@@ -14,3 +14,9 @@ stages:
     outs:
     - matrix_tfidf.pkl
     - tfidf_vectorizer.pkl
+  build_models:
+    cmd: python src_modeles.py
+    deps:
+    - src_modeles.py
+    outs:
+    - modeles_construits.pkl

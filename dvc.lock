@@ -36,3 +36,15 @@ stages:
       hash: md5
       md5: 2bba273ee4d321f3c3b8f9894f54b339
       size: 179359
+  build_models:
+    cmd: python src_modeles.py
+    deps:
+    - path: src_modeles.py
+      hash: md5
+      md5: 2361a58c6e1e30c46c936a408ba019dd
+      size: 824
+    outs:
+    - path: modeles_construits.pkl
+      hash: md5
+      md5: f7a5a4a8a02c4202152f41de956bc3f7
+      size: 1067
