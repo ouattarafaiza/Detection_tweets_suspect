@@ -16,3 +16,23 @@ stages:
       hash: md5
       md5: 4f74ab0da688d893baf7c0f3531a7a64
       size: 7287791
+  vectorization:
+    cmd: python src_vectorisation.py
+    deps:
+    - path: src_vectorisation.py
+      hash: md5
+      md5: 82ba9fcd46351dd33bb4214c6226c45a
+      size: 1113
+    - path: tweets_suspect_clean.csv
+      hash: md5
+      md5: 4f74ab0da688d893baf7c0f3531a7a64
+      size: 7287791
+    outs:
+    - path: matrix_tfidf.pkl
+      hash: md5
+      md5: e57f4d915db9596a483d7304daee9aa9
+      size: 5451746
+    - path: tfidf_vectorizer.pkl
+      hash: md5
+      md5: 2bba273ee4d321f3c3b8f9894f54b339
+      size: 179359

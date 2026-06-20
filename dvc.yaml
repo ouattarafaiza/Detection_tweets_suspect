@@ -6,3 +6,11 @@ stages:
     - tweets_suspect.csv
     outs:
     - tweets_suspect_clean.csv
+  vectorization:
+    cmd: python src_vectorisation.py
+    deps:
+    - src_vectorisation.py
+    - tweets_suspect_clean.csv
+    outs:
+    - matrix_tfidf.pkl
+    - tfidf_vectorizer.pkl
