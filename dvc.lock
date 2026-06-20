@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python src_pretraitement.py
+    deps:
+    - path: src_pretraitement.py
+      hash: md5
+      md5: a47b193003182b32e50a52fd6aaa4319
+      size: 1223
+    - path: tweets_suspect.csv
+      hash: md5
+      md5: 60e5f26c964cb0a766047fd993102170
+      size: 4695170
+    outs:
+    - path: tweets_suspect_clean.csv
+      hash: md5
+      md5: 4f74ab0da688d893baf7c0f3531a7a64
+      size: 7287791
