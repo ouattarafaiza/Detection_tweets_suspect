@@ -100,3 +100,27 @@ stages:
       hash: md5
       md5: 363794a6e830e4ae3e3ead93fcf8466f
       size: 23346
+  optimize:
+    cmd: python src_optimisation.py
+    deps:
+    - path: matrix_tfidf.pkl
+      hash: md5
+      md5: e57f4d915db9596a483d7304daee9aa9
+      size: 5451746
+    - path: modeles_construits.pkl
+      hash: md5
+      md5: f7a5a4a8a02c4202152f41de956bc3f7
+      size: 1067
+    - path: src_optimisation.py
+      hash: md5
+      md5: bfd6a7b9e257eb3166d2f5005d34d108
+      size: 1682
+    outs:
+    - path: modele_final_optimise.pkl
+      hash: md5
+      md5: 0ef57165fb9afc48da5b7ef6bd70ca59
+      size: 85403481
+    - path: parametres_optimaux.txt
+      hash: md5
+      md5: 4ebd587e5ff7c52a73ecc0cc11b99d3e
+      size: 93
