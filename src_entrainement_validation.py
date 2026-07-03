@@ -40,9 +40,9 @@ df_performances = pd.DataFrame(performances_cv).T
 print("\n=== TABLEAU COMPARATIF DES PERFORMANCES (VALIDATION CROISÉE) ===")
 print(df_performances.to_string())
 
-# Sauvegarde des résultats et des données de test pour la Partie 6
+# Sauvegarde des résultats
 df_performances.to_csv('performances_validation.csv')
-# On entraîne les modèles sur la totalité du Train pour qu'ils soient prêts pour la Partie 6
+# On entraîne les modèles sur la totalité du Train 
 for nom, modele in modeles.items():
     modele.fit(X_train, y_train)
 

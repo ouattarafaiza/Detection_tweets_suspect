@@ -20,3 +20,37 @@ stages:
     - src_modeles.py
     outs:
     - modeles_construits.pkl
+  train_val:
+    cmd: python src_entrainement_validation.py
+    deps:
+    - matrix_tfidf.pkl
+    - modeles_construits.pkl
+    - src_entrainement_validation.py
+    outs:
+    - donnees_test.pkl
+    - modeles_entraines.pkl
+    - performances_validation.csv
+  plots:
+    cmd: python src_evaluation_graphique.py
+    deps:
+    - donnees_test.pkl
+    - modeles_entraines.pkl
+    - src_evaluation_graphique.py
+    outs:
+    - courbe_roc.png
+    - matrice_confusion.png
+  optimize:
+    cmd: python src_optimisation.py
+    deps:
+    - matrix_tfidf.pkl
+    - modeles_construits.pkl
+    - src_optimisation.py
+    outs:
+    - modele_final_optimise.pkl
+    - parametres_optimaux.txt
+  deploy_app:
+    cmd: uv run python app.py
+    deps:
+    - app.py
+    - modele_final_optimise.pkl
+    - tfidf_vectorizer.pkl

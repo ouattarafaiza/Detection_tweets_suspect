@@ -1,2 +1,12 @@
 /tweets_suspect.csv
 /tweets_suspect_clean.csv
+/matrix_tfidf.pkl
+/tfidf_vectorizer.pkl
+/modeles_construits.pkl
+/performances_validation.csv
+/modeles_entraines.pkl
+/donnees_test.pkl
+/matrice_confusion.png
+/courbe_roc.png
+/parametres_optimaux.txt
+/modele_final_optimise.pkl

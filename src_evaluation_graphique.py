@@ -19,7 +19,7 @@ y_prob = modele_champion.predict_proba(X_test)[:, 1] # Probabilités pour la cou
 # 3. Génération et sauvegarde de la Matrice de Confusion
 print("Génération de la matrice de confusion...")
 cm = confusion_matrix(y_test, y_pred)
-disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=['Non-Suspect (0)', 'Suspect (1)'])
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=['Non-Suspect (1)', 'Suspect (0)'])
 
 plt.figure(figsize=(6, 6))
 disp.plot(cmap=plt.cm.Blues, values_format='d')

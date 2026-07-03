@@ -89,7 +89,7 @@ stages:
       size: 43416458
     - path: src_evaluation_graphique.py
       hash: md5
-      md5: 6da315c0933b511c42574e7b10ffd869
+      md5: 2a3ae8645eb5cf510e968ed02d8d568c
       size: 1980
     outs:
     - path: courbe_roc.png
@@ -98,8 +98,8 @@ stages:
       size: 33959
     - path: matrice_confusion.png
       hash: md5
-      md5: 363794a6e830e4ae3e3ead93fcf8466f
-      size: 23346
+      md5: e1b16d91385b85e3a9f51a87982fc951
+      size: 23330
   optimize:
     cmd: python src_optimisation.py
     deps:
@@ -113,8 +113,8 @@ stages:
       size: 1067
     - path: src_optimisation.py
       hash: md5
-      md5: bfd6a7b9e257eb3166d2f5005d34d108
-      size: 1682
+      md5: 5bd040edbaf49f635c43241aaf207041
+      size: 1644
     outs:
     - path: modele_final_optimise.pkl
       hash: md5
@@ -124,3 +124,18 @@ stages:
       hash: md5
       md5: 4ebd587e5ff7c52a73ecc0cc11b99d3e
       size: 93
+  deploy_app:
+    cmd: uv run python app.py
+    deps:
+    - path: app.py
+      hash: md5
+      md5: e6707c00180558efb3d952c58f71aeee
+      size: 2547
+    - path: modele_final_optimise.pkl
+      hash: md5
+      md5: 0ef57165fb9afc48da5b7ef6bd70ca59
+      size: 85403481
+    - path: tfidf_vectorizer.pkl
+      hash: md5
+      md5: 2bba273ee4d321f3c3b8f9894f54b339
+      size: 179359

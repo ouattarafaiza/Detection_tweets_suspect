@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 print("=== Partie 4 : Construction des modèles ===")
 
-# 1. Gestion du déséquilibre des classes & Définition des 3 algorithmes
+# 1. Gestion du déséquilibre des classes avec Class Weights & Définition des 3 algorithmes
 # Les modèles prêts à être entraînés
 modeles = {
     'Logistic_Regression': LogisticRegression(class_weight='balanced', max_iter=1000, random_state=42),
