@@ -21,8 +21,8 @@ stages:
     deps:
     - path: src_vectorisation.py
       hash: md5
-      md5: 82ba9fcd46351dd33bb4214c6226c45a
-      size: 1113
+      md5: 5aa0cb7de685c611af7142580483664b
+      size: 1101
     - path: tweets_suspect_clean.csv
       hash: md5
       md5: 4f74ab0da688d893baf7c0f3531a7a64
@@ -34,15 +34,15 @@ stages:
       size: 5451746
     - path: tfidf_vectorizer.pkl
       hash: md5
-      md5: 2bba273ee4d321f3c3b8f9894f54b339
+      md5: 81fe9f0b8e7b799d785e08fa17f06080
       size: 179359
   build_models:
     cmd: python src_modeles.py
     deps:
     - path: src_modeles.py
       hash: md5
-      md5: 2361a58c6e1e30c46c936a408ba019dd
-      size: 824
+      md5: 3c5586bf2fc97afcbf235db6e6b5d215
+      size: 843
     outs:
     - path: modeles_construits.pkl
       hash: md5
@@ -61,8 +61,8 @@ stages:
       size: 1067
     - path: src_entrainement_validation.py
       hash: md5
-      md5: 9e153c5da6c695b5a52d451a5ec7660a
-      size: 2387
+      md5: 748fd732ab21683eb32a79a167f6cb97
+      size: 2304
     outs:
     - path: donnees_test.pkl
       hash: md5
@@ -129,13 +129,13 @@ stages:
     deps:
     - path: app.py
       hash: md5
-      md5: e6707c00180558efb3d952c58f71aeee
-      size: 2547
+      md5: 5c05b1d304586cf3623c55be811a9f93
+      size: 2538
     - path: modele_final_optimise.pkl
       hash: md5
       md5: 0ef57165fb9afc48da5b7ef6bd70ca59
       size: 85403481
     - path: tfidf_vectorizer.pkl
       hash: md5
-      md5: 2bba273ee4d321f3c3b8f9894f54b339
+      md5: 81fe9f0b8e7b799d785e08fa17f06080
       size: 179359
