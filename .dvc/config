@@ -1,4 +1,4 @@
 [core]
     remote = myremote
 ['remote "myremote"']
-    url = C:/Users/1/OneDrive/DVC_Remote
+    url = C:/DVC_Remote_Tweets
