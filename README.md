@@ -131,3 +131,18 @@ Puis ouvrir :
 
 http://localhost:8501
 
+### Proposition tweets pour test
+
+- Beautiful day today, just finished my data science project! Have a great weekend everyone.
+
+- Happy birthday to my best friend! Wishing you an amazing year filled with joy, success, and happiness.
+
+- Just checking the weather for tomorrow, looks like it's going to be sunny all day. Perfect for a walk.
+
+- I hate you so much, I will find you and make you pay for this.
+
+- You are absolutely useless and a piece of trash. Get off the internet, nobody likes you.
+
+- Shut up you absolute idiot, your opinion is completely trash and you have zero brain cells.
+
+
