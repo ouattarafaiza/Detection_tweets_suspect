@@ -1,4 +1,3 @@
-/tweets_suspect.csv
 /tweets_suspect_clean.csv
 /matrix_tfidf.pkl
 /tfidf_vectorizer.pkl
@@ -10,3 +9,4 @@
 /courbe_roc.png
 /parametres_optimaux.txt
 /modele_final_optimise.pkl
+/tweets_suspect.csv
