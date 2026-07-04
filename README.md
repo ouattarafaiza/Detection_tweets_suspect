@@ -95,6 +95,7 @@ Le projet utilise un remote DVC local qui est fourni atravers le dossier nommer 
 Après clonage du projet, configurer le remote en exécutant  :
 
 dvc remote add -d myremote C:/DVC_Remote_Tweets
+dvc remote default myremote
 
 - Récupération des données , exécutez: 
 
