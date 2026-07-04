@@ -1,4 +1,5 @@
 # Détection Automatique de Tweets Suspects avec Machine Learning
+
 ## Description
 
 Ce projet a pour objectif de développer un système de classification automatique de tweets en deux catégories :
@@ -68,6 +69,7 @@ Optimisation (Grid Search)
 Application Streamlit
 (app.py)
 
+
 ###  Installation
 
 1️. Cloner le projet
@@ -75,9 +77,8 @@ Application Streamlit
 git clone https://github.com/ouattarafaiza/Detection_tweets_suspect.git
 cd Detection_tweets_suspect
 
-2️. Installer les dépendances
+2️. Installer les dépendances,  exécutez : 
 
-Le projet utilise uv :
 
 uv pip install dvc scikit-learn pandas numpy matplotlib seaborn joblib streamlit nltk
 
@@ -91,11 +92,12 @@ Le projet utilise un remote DVC local qui est fourni atravers le dossier nommer 
 
 - Configuration du remote
 
-Après clonage du projet, configurer le remote comme suit :
+Après clonage du projet, configurer le remote en exécutant  :
 
 dvc remote add -d myremote C:/DVC_Remote_Tweets
 
-- Récupération des données
+- Récupération des données , exécutez: 
+
 dvc pull
 
 Cette commande permet de récupérer :
@@ -105,7 +107,8 @@ fichiers intermédiaires
 modèles entraînés
 résultats d’évaluation
 
-- Reproduction complète du pipeline
+- Reproduction complète du pipeline, exécutez: 
+
 dvc repro
 
 Cette commande exécute automatiquement :
@@ -120,7 +123,8 @@ Préparation du modèle final
 
 
 #### Lancer l’application
-Application Streamlit
+Pour tester le modèle final optimisé en temps réel à l'aide d'une interface graphique interactive, exécutez :
+
 uv run streamlit run app.py
 
 Puis ouvrir :
